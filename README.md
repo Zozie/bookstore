@@ -1,0 +1,1 @@
+This is a first try for making a centralised repository for a django project. The material here is mostly from the academy hacker django crash course, although I was not lazy enough to revert to older verions of packages, rather did some googling and upgraded to the current newest versions. I hope you can learn something from it, I certainly did.
