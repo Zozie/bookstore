@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head lang='en'>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-<h1>Your account has been activated!</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% load i18n %}
 
-
+{% block content %}
+<p>{% trans "Your account is now activated." %}</p>
+{% endblock %}

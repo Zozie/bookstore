@@ -1,1 +1,1 @@
-Activate your account at mysterybooks.com
+{% load i18n %}{% trans "Account activation on" %} {{ site.name }}

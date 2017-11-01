@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head lang='en'>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-<form method=post action=".">
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block content %}
+<form method="post" action=".">
   {% csrf_token %}
-  {{form.as_pl}}
-  <input type="submit" value="Register" />
-</body>
-</html>
+  {{ form.as_p }}
 
-
+  <input type="submit" value="{% trans 'Submit' %}" />
+</form>
+{% endblock %}

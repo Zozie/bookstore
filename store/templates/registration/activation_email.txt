@@ -1,9 +1,6 @@
-Greetings,
+{% load i18n %}
+{% trans "Activate account at" %} {{ site.name }}:
 
-You just signed up for an account at {{ site.name }}. Please click the link below to activate it.
+http://{{ site.domain }}{% url 'registration_activate' activation_key %}
 
-http://{{ site.domain }}{% url 'registration_activate' activation_key Ã%}
-
-This link is valid for {{ expiration_days }}. If it wasn't you that signed up for this account don't panic it's safe to ignore this e-mail.
-
--The Mystery Books Team
+{% blocktrans %}Link is valid for {{ expiration_days }} days.{% endblocktrans %}
